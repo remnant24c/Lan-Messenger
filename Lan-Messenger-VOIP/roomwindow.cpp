@@ -34,7 +34,7 @@ RoomWindow::~RoomWindow()
 void RoomWindow::on_btnSend_clicked()
 {
     emit enteredText(ui->txtInput->text());
-    ui->txtChat->append("Me: " + ui->txtInput->text());
+    ui->txtChat->append(tr("Me: ") + ui->txtInput->text());
     ui->txtInput->clear();
     ui->txtInput->setFocus();
 }

@@ -31,7 +31,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(msgr, SIGNAL(receivedPM(QString,QString)), this, SLOT(onReceivedPM(QString,QString)));
     connect(msgr, SIGNAL(receivedRoom(QString,QString,QString)), this, SLOT(onReceivedRoom(QString,QString,QString)));
     dlgName->setModal(true);
-    dlgName->setWindowTitle("You Nickname, Please");
+    dlgName->setWindowTitle(tr("Your Nickname, Please"));
     dlgName->show();
 }
 
@@ -178,7 +178,7 @@ void MainWindow::on_actionAbout_triggered()
 {
     DialogAbout* about = new DialogAbout(this);
     about->setModal(true);
-    about->setWindowTitle("About 288 L.M.");
+    about->setWindowTitle(tr("About 288 L.M."));
     about->show();
 }
 
