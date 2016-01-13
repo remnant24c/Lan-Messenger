@@ -178,7 +178,7 @@ void MainWindow::on_actionAbout_triggered()
 {
     DialogAbout* about = new DialogAbout(this);
     about->setModal(true);
-    about->setWindowTitle(tr("About 288 L.M."));
+    about->setWindowTitle(tr("About L.M."));
     about->show();
 }
 

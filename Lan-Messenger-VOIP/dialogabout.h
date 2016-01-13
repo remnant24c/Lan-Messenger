@@ -34,6 +34,8 @@ public:
     
 private:
     Ui::DialogAbout *ui;
+
+    void initContents(void);
 };
 
 #endif // DIALOGABOUT_H

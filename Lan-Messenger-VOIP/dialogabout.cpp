@@ -17,15 +17,26 @@
 
 #include "dialogabout.h"
 #include "ui_dialogabout.h"
+#include "globaldef.h"
 
 DialogAbout::DialogAbout(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::DialogAbout)
 {
     ui->setupUi(this);
+    initContents();
 }
 
 DialogAbout::~DialogAbout()
 {
     delete ui;
 }
+
+void DialogAbout::initContents(void)
+{
+    ui->lblAboutTitle->setText( tr("Lan Messenger ") + QString(LM_VERSION) );
+    ui->lblMadeByPeople->setText(tr("Faraz Fallahi \n Kim, David (kr)"));
+    ui->lblGithubAddr->setText(tr("<a href=github.com/fffaraz color=blue>github.com/fffaraz</a>"));
+    ui->lblHomepage->setText(tr("<a href=www.frz.ir color=blue>www.frz.ir</a>"));
+    ui->lblMailAddr->setText(tr("<a href=fffaraz@gmail.com color=blue>fffaraz@gmail.com</a>"));
+}//initContents(void)

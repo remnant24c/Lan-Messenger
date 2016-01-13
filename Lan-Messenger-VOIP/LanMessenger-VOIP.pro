@@ -48,7 +48,8 @@ HEADERS  += mainwindow.h \
     voice/codec.h \
     voice/buffer.h \
     voice/codecs/dummycodec.h \
-    voice/codecs/dpcm.h
+    voice/codecs/dpcm.h \
+    globaldef.h
 
 FORMS    += mainwindow.ui \
     dialognickname.ui \
